@@ -1,0 +1,482 @@
+.container{
+    margin: 0 105px;
+}
+
+.title{
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+/* -------------- PROMO ---------------- */
+
+.promo{
+    background: url(img/promo-background.png) center center/cover no-repeat;
+    min-height: 700px;
+    padding-top: 40px;
+}
+
+
+/* ----------------------------------------------HEADER------------ To Do(?) - position: sticky;------------------------- */
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* --------------------------------------- NAVIGATION---------------------------------- */
+
+
+.nav_list{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_item a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 11px 15px;
+    transition: all .3s ease;
+}
+
+.nav_item a:hover{
+    color: #fff;
+    background-color: #d03958;
+    border-radius: 5px;
+}
+
+.promo__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    position: relative;
+    bottom: -70px;
+}
+
+.promo__text{
+    width: 50%;
+}
+
+.promo__title {
+    font-size: 90px;
+    font-family: "Montserrat";
+    color: rgb(208, 57, 88);
+    font-weight: bold;
+    line-height: 80px;
+  }
+  
+.promo__title span{
+    color: #000;
+}
+
+.promo__descr{
+    font-size: 20px;
+    font-family: "PTSerif";
+    color: rgb(22, 22, 22);
+    line-height: 1.4;
+      
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px;
+    background-color: rgb(208, 57, 88);
+    border-radius: 5px;
+    margin-top: 75px;
+}
+
+.form__title{
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.form__input{
+    padding: 19px 23px 23px 19px;
+    font-family: "PTSerif";
+    font-size: 20px;
+    color: #b5b5b5;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form__input:nth-child(5){
+    margin-bottom: 27px;
+}
+
+.form__input:focus{
+    outline: none;
+    border: none;
+}
+
+.form__checkbox{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.form__checkbox+label{
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    font-family: "PTSerif";
+    color: rgb(255, 255, 255);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.form__checkbox+label::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 23px;
+}
+
+.form__checkbox:checked+label::before{
+    background-image: url("img/bxs+checkbox+checked-1325051951699795028.svg");
+}
+
+/*------------SEND BUTTON----------- */
+
+.form__btn{
+    padding: 20px 140px;
+    font-size: 22px;
+    background-color: #000;
+    font-family: "Montserrat";
+     color: rgb(255, 255, 255);
+    line-height: 1.2;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.form__btn:hover{
+    box-shadow: 2px 2px 1px 0px;
+}
+
+/*----------------- OUR SERVICES ----------------------*/
+
+.our-services{
+    padding: -30px 0;
+}
+
+.our-services__title{
+    color: #d03958;
+}
+
+.our-services__title span{
+    color: #000;
+}
+
+.our-services__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.our-services__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.our-services__descr{
+    font-size: 20px;
+    font-family: "PTSerif";
+    color: rgb(22, 22, 22);
+    line-height: 1.4;
+    text-align: center;
+}
+
+.our-services__img{
+    margin-bottom: 45px;
+}
+
+
+/* ---------- SECTION:  OUR STORY----------------------*/
+
+
+.our-story{
+    background-color: #d03958;
+    padding: 30px 0;
+}
+
+.our-story__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-story__descr{
+  font-size: 20px;
+  font-family: "PTSerif";
+  color: rgb(255, 255, 255);
+  line-height: 1.4;
+  text-align: left;
+  margin: -20px;
+  margin-top: inherit;
+}
+
+/* ---------------------------OUR STORY BUTTON---------------------------------- */
+
+.our-story__button{
+    text-decoration: none;
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: rgb(22, 22, 22);
+    padding: 24px 70px;
+    background-color: #e3d5b8;
+    border-radius: 5px;
+    transition: all .4s ease;
+}
+
+.our-story__button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* -------------------------------------------------- SECTION: PRICING ----------------------------------------- */
+
+.pricing{
+    background-color: #e3d5b8;
+    padding-top: 60px;
+}
+
+.pricing__title{
+    text-align: center;
+    margin-bottom: 55px;
+    margin-top: -1px;
+}
+
+.pricing__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__item{
+    background-color: #fff;
+    width: calc(33.333% - 20px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
+    position: relative;
+}
+
+.pricing__item .pricing__cost{
+    font-size: 60px;
+    font-family: "Montserrat";
+    color: rgb(208, 57, 88);
+    font-weight: bold;
+    margin: 0;
+    
+  }
+
+.pricing__item p{
+  font-size: 22px;
+  font-family: "PTSerif";
+  color: rgb(22, 22, 22);
+  line-height: 1.273;
+  text-align: center;
+  
+}
+
+.pricing__btn{
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(22, 22, 22);
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 60px;
+  background-color: #e3d5b8;
+  border-radius: 5px;
+  transition: all .4s ease;
+}
+
+.pricing__btn:hover{
+    background-color: #d03958;
+    color: #fff;
+}
+
+.pricing__descr{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* --------------- To Do --------- Actually, I don't know how to put border-radius: 5px; in the triangle below */
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 90px solid #b4a993;
+    border-right: 90px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.triangle p{
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  line-height: 1.75;
+  top: 0;
+  left: 0;
+  position: absolute;
+  left: 5px;
+  top: -75px;
+  margin: 0;
+  -moz-transform: matrix( 0.67739919539163,-0.73561561299552,0.73561561299552,0.67739919539163,0,0);
+  -webkit-transform: matrix( 0.67739919539163,-0.73561561299552,0.73561561299552,0.67739919539163,0,0);
+  -ms-transform: matrix( 0.67739919539163,-0.73561561299552,0.73561561299552,0.67739919539163,0,0);
+}
+
+
+/* ------------------------------------------------ SECTION: REVIEWS(TESTIMONIAL & GALLERY) ----------------------------------- */
+
+
+.reviews{
+    padding: 120px 0;
+
+}
+
+.reviews .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial__title{
+    text-align: center;
+}
+
+.testimonial{
+    width: 60%;
+}
+
+.testimonial__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__item{
+    position: relative;
+    padding: 26px 70px 26px 26px;
+    margin-bottom: 35px;
+    width: 70%;
+    transition: all .5s linear;
+}
+
+.testimonial__item:hover{
+    background-color: #e3d5b8;
+    border-radius: 5px;
+}
+
+/* ----------------------------------- It could be better accourding to my personal preferance
+
+.testimonial__item:hover {
+    background-color: #e3d5b8;
+    border-radius: 20px 50px; 
+    ----------------------------*/
+
+.testimonial__img{
+    position: absolute;
+    right: -60px;
+    top: 5%; 
+}
+
+.testimonial__descr{
+    font-size: 20px;
+    font-family: "PTSerif";
+    color: rgb(22, 22, 22);
+    line-height: 1.4;
+}
+
+.testimonial__subtext{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(208, 57, 88);
+    line-height: 1.4;
+}
+
+
+/* --------------------------------------------------------- GALLERY ----------------------------------------------- */
+
+
+.gallery{
+    width: 80%;
+}
+
+.gallery__title{
+    text-align: center;
+    color: #d03958;
+}
+
+.gallery__content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.gallery__more{
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(208, 57, 88);
+    line-height: 1.4;
+    display: block;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.gallery__more:hover{
+    color: #d03958;
+}
+
+
+/* ----------------------------------- FOOTER------------------------------ */
+
+
+.footer{
+    background-color: #000;
+    min-height: 180px;
+    /* ------------------------------------------------------------ Since now I did this crap on my own :( --------------------------------------------- */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-title{
+    position: absolute;
+    font-family: "ptserif-regular";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer-title2{
+    color: #D03958;
+    font-family: "ptserif-regular";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
